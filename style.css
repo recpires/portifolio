@@ -88,12 +88,16 @@ h3 {
 
 /* Seção "Sobre Mim" */
 #about p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
   margin-bottom: 1rem;
   text-align: justify;
 }
 
 /* Lista "Situação Atual" */
 #current-status ul {
+  font-size: 1.2rem;
+  font-family: sans-serif;
   list-style: none;
   padding-left: 0;
 }
