@@ -112,6 +112,45 @@ h3 {
   font-size: 1.2rem;
 }
 
+/* Galeria de Cursos e bootcamps */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* Colunas responsivas */
+  gap: 1.5rem; /* Espaçamento maior */
+  justify-items: center;
+  padding: 1rem;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Centraliza o texto dentro do card */
+  background-color: rgba(0, 0, 0, 0.3); /* Fundo semi-transparente */
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 100%; /* Ocupa todo o espaço disponível na coluna */
+}
+
+.course-card img {
+  width: 150px; /* Aumentei um pouco o tamanho */
+  height: 150px;
+  margin-bottom: 0.5rem;
+}
+
+.course-card p {
+  color: var(--cor-texto);
+  font-size: 1.5rem; /* Ajustei o tamanho da fonte */
+  font-family: "Times New Roman", Times, serif;
+}
+.course-card:hover {
+  transform: scale(1.1);
+}
+
 /* Galeria de Tecnologias */
 .tech-grid {
   display: grid;
