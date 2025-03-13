@@ -8,6 +8,10 @@ Bem-vindo ao meu portfólio! Este projeto foi desenvolvido utilizando as seguint
 - **CSS3**: Utilizado para estilizar e melhorar a aparência das páginas web.
 - **JavaScript**: Utilizado para adicionar interatividade e dinamismo às páginas web.
 
+## Mídia
+
+https://github.com/user-attachments/assets/094f3fad-55e0-4a3a-98c8-80bbe244d7d7
+
 ## Estrutura do Projeto
 
 O projeto está organizado da seguinte forma:
