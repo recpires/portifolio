@@ -60,6 +60,35 @@ h3 {
   margin-top: 10px;
 }
 
+/* Botão de Download */
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor de fundo azul, você pode alterar */
+  color: white; /* Cor do texto branco, você pode alterar */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+  border: none; /* Remove a borda padrão do botão */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse */
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.download-button:focus {
+  outline: none; /* Remove a borda de foco padrão */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra de foco */
+}
+
+/* Estilos adicionais para melhorar a aparência do botão */
+.download-button {
+  font-size: 16px; /* Tamanho da fonte */
+  letter-spacing: 0.5px; /* Espaçamento entre as letras */
+}
+
 /* Cards */
 .card {
   background-color: rgba(31, 66, 135, 0.8); /* Fundo com transparência */
