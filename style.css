@@ -60,6 +60,17 @@ h3 {
   margin-top: 10px;
 }
 
+.profile-image {
+  width: 250px;
+  border-radius: 30%;
+  border: 5px solid #3498db;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
 /* Botão de Download */
 .download-button {
   display: inline-block;
@@ -252,6 +263,42 @@ h3 {
   transform: scale(1.05); /* Efeito de zoom sutil */
 }
 
+/* Galeria de Projetos */
+.proj-image {
+  max-width: 100%; /* Ajuste este valor conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaçamento extra abaixo da imagem */
+  margin: 0 auto; /* Opcional: centraliza a imagem no contêiner */
+}
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Cards maiores */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.proj-card {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.proj-card a {
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  display: block; /* Ocupa toda a largura do card */
+  text-align: center;
+}
+
+.proj-card:hover {
+  transform: scale(1.05); /* Efeito de zoom sutil */
+}
+
 /* Ícones Sociais */
 .social-icons {
   text-align: center;
@@ -295,33 +342,6 @@ a:hover {
     10%
   ); /* Escurece um pouco ao passar o mouse */
   text-decoration: underline; /* Sublinhado no hover */
-}
-
-/* Estilos para as estatísticas do GitHub */
-.github-stats {
-  display: flex;
-  flex-wrap: wrap; /* Quebra para a próxima linha se não couber */
-  justify-content: center; /* Centraliza horizontalmente */
-  gap: 1rem; /* Espaço entre as imagens */
-  margin-bottom: 1rem;
-}
-
-.github-stats img {
-  max-width: 100%; /* Garante que não ultrapassem o container */
-  height: auto;
-  border-radius: 8px; /* Bordas arredondadas */
-}
-
-#stats h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.github-snake {
-  display: block; /* Garante que a imagem ocupe sua própria linha */
-  margin: 1rem auto; /* Centraliza horizontalmente */
-  max-width: 90%; /* Limita a largura */
-  border-radius: 10px;
 }
 
 /* Keyframes para animações */
