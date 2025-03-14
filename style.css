@@ -7,7 +7,7 @@
   --cor-terciaria: #21e6c1; /* Azul claro (detalhes) */
   --cor-texto: #ffffff; /* Branco para texto */
   --cor-sombra: rgba(0, 0, 0, 0.7);
-  --gradiente-fundo: linear-gradient(to bottom, #071e3d, #000000);
+  --gradiente-fundo: linear-gradient(to bottom, black, #000000);
 }
 
 /* Reset e Estilos Gerais */
@@ -63,7 +63,7 @@ h3 {
 .profile-image {
   width: 250px;
   border-radius: 30%;
-  border: 5px solid #3498db;
+  border: none;
 }
 
 .profile-image:hover {
