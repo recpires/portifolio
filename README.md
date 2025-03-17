@@ -19,12 +19,24 @@ O projeto está organizado da seguinte forma:
 ```
 /d:/programacao/portifolio/
 │
-├── images/
+├── .vscode/
+│       └── settings.json
 ├── portifolio/
-│   ├── style.css
+│   ├── assets/
+│   ├── arquivos/
+│       └── cv-rodrigo-pires.pdf
+│   ├── images/
+│       └── 13 imagens
+│   ├── src/
+│       ├── animations.css
+│       ├── body-footer.css
+│       ├── galerias.css
+│       ├── media-queries.css
+│       ├── resets.css
+│       └── var.css
+│   ├── index.html
 │   ├── README.md
-│   ├──script.js
-│   └── style.css
+│   └── script.js
 │
 ```
 
