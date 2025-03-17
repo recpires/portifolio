@@ -1,0 +1,182 @@
+body {
+  background: var(--gradiente-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Fundo Estrelado */
+#stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+#main-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: inline-block; /* Importante para a animação de digitação */
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--cor-terciaria);
+}
+.quote {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+}
+
+.profile-image {
+  width: 250px;
+  border-radius: 30%;
+  border: none;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
+/* Botão de Download */
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor de fundo azul, você pode alterar */
+  color: white; /* Cor do texto branco, você pode alterar */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  font-weight: bold; /* Texto em negrito */
+  transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+  border: none; /* Remove a borda padrão do botão */
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar o mouse */
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.download-button:focus {
+  outline: none; /* Remove a borda de foco padrão */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra de foco */
+}
+
+/* Estilos adicionais para melhorar a aparência do botão */
+.download-button {
+  font-size: 16px; /* Tamanho da fonte */
+  letter-spacing: 0.5px; /* Espaçamento entre as letras */
+}
+
+/* Cards */
+.card {
+  background-color: rgba(31, 66, 135, 0.8); /* Fundo com transparência */
+  backdrop-filter: blur(10px); /* Efeito de vidro (blur) */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--cor-sombra);
+  padding: 2rem;
+  margin: 2rem auto; /* Centraliza e adiciona margem */
+  max-width: 90%; /* Limita a largura máxima */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9); /* Sombra mais intensa no hover */
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--cor-terciaria);
+  border-bottom: 2px solid var(--cor-terciaria);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Seção "Sobre Mim" */
+#about p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Lista "Situação Atual" */
+#current-status ul {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  list-style: none;
+  padding-left: 0;
+}
+
+#current-status li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative; /* Para o ícone personalizado */
+}
+
+#current-status li::before {
+  content: "•"; /* Ícone de marcador (pode ser substituído por um ícone SVG) */
+  color: var(--cor-terciaria);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Ícones Sociais */
+.social-icons {
+  text-align: center;
+  margin-top: 1rem;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#links ul {
+  list-style: none;
+}
+
+/* Estilos específicos para links */
+a {
+  color: var(--cor-terciaria);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+a:hover {
+  color: darken(
+    var(--cor-terciaria),
+    10%
+  ); /* Escurece um pouco ao passar o mouse */
+  text-decoration: underline; /* Sublinhado no hover */
+}

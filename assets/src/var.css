@@ -1,0 +1,9 @@
+/* Cores e Variáveis */
+:root {
+    --cor-primaria: #071e3d; /* Azul marinho escuro */
+    --cor-secundaria: #1f4287; /* Azul marinho médio */
+    --cor-terciaria: #21e6c1; /* Azul claro (detalhes) */
+    --cor-texto: #ffffff; /* Branco para texto */
+    --cor-sombra: rgba(0, 0, 0, 0.7);
+    --gradiente-fundo: linear-gradient(to bottom, black, #000000);
+  }

@@ -1,0 +1,31 @@
+/* Keyframes para animações */
+
+/* Animação de "digitação" (definida no JavaScript, mas o keyframe fica aqui) */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--cor-terciaria);
+  }
+}
+
+/* Animação para estrelas (definida no JavaScript) */
+@keyframes move-stars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  } /* Move as estrelas para cima */
+}

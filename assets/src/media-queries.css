@@ -1,0 +1,33 @@
+/* Media Queries (Responsividade) */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+  #main-title {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .github-stats img {
+    width: 100%; /* Imagens ocupam toda a largura em telas menores */
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  #main-title {
+    font-size: 2rem;
+  }
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+  .github-stats img {
+    width: 100%; /* Imagens ocupam toda a largura em telas menores */
+  }
+}
