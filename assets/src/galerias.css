@@ -23,14 +23,14 @@
 }
 
 .course-card img {
-  width: 150px; /* Aumentei um pouco o tamanho */
-  height: 150px;
+  width: 100px; /* Aumentei um pouco o tamanho */
+  height: 100px;
   margin-bottom: 0.5rem;
 }
 
 .course-card p {
   color: var(--cor-texto);
-  font-size: 1.5rem; /* Ajustei o tamanho da fonte */
+  font-size: 1.2rem; /* Ajustei o tamanho da fonte */
   font-family: "Times New Roman", Times, serif;
 }
 .course-card:hover {
