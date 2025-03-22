@@ -80,6 +80,24 @@ h3 {
   letter-spacing: 0.5px; /* Espaçamento entre as letras */
 }
 
+/* Ícones Sociais */
+.social-icons {
+  text-align: center;
+  margin-top: 1rem;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
 /* Cards */
 .card {
   background-color: rgba(31, 66, 135, 0.8); /* Fundo com transparência */
@@ -136,22 +154,77 @@ h3 {
   font-size: 1.2rem;
 }
 
-/* Ícones Sociais */
-.social-icons {
-  text-align: center;
-  margin-top: 1rem;
+/* Seção "Artigos" */
+#articles {
+  text-align: left;
 }
-.social-icons a {
-  display: inline-block;
-  margin: 0 1rem;
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 300px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100% !important;
+  height: 175px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--cor-sombra);
   transition: transform 0.3s ease;
 }
-.social-icons a:hover {
-  transform: scale(1.2);
+
+.carousel-slide img:hover {
+  transform: scale(1.05);
 }
-.social-icons img {
+
+.carousel-slide p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--cor-texto);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
 }
 
 /* Rodapé */

@@ -87,3 +87,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
   createStars(); // Chama a função para criar as estrelas
 });
+
+// Lógica para o carrossel de artigos
+const track = document.querySelector(".carousel-track");
+const slides = Array.from(track.children);
+const prevButton = document.querySelector(".carousel-button.prev");
+const nextButton = document.querySelector(".carousel-button.next");
+
+let currentIndex = 0;
+
+function updateCarousel(position) {
+  track.style.transform = `translateX(${position}px)`;
+}
+
+function moveToSlide(index) {
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  currentIndex = (index + slides.length) % slides.length; // Loop infinito
+  const newPosition = -currentIndex * (slideWidth + 20); // Inclui margem
+  updateCarousel(newPosition);
+}
+
+nextButton.addEventListener("click", () => {
+  moveToSlide(currentIndex + 1);
+});
+
+prevButton.addEventListener("click", () => {
+  moveToSlide(currentIndex - 1);
+});
+
+// Ajusta o tamanho do track dinamicamente
+function setSlidePositions() {
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  track.style.width = `${(slideWidth + 20) * slides.length}px`; // Inclui margem
+}
+
+window.addEventListener("resize", setSlidePositions);
+setSlidePositions();
